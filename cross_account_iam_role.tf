@@ -1,3 +1,7 @@
+  terraform {
+  backend "s3" {}
+}
+  
   resource "aws_iam_role" "cross_account_iam_role" {
   name = "cross_account_iam_role"
    assume_role_policy = jsonencode({
